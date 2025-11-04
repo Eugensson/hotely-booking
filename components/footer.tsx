@@ -11,7 +11,10 @@ import { fadeIn } from "@/lib/variants";
 
 export const Footer = () => {
   return (
-    <footer className="relative pt-12 xl:pt-0 bg-soft-green-secondary">
+    <footer
+      className="relative pt-12 xl:pt-0 bg-soft-green-secondary"
+      id="contact"
+    >
       <div className="container mx-auto">
         <motion.div
           variants={fadeIn("up", 0.4)}

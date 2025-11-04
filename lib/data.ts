@@ -3,11 +3,35 @@ import { SlSocialFacebook, SlSocialInstagram } from "react-icons/sl";
 
 import {
   Hotel,
+  NavItem,
   RecommendationItem,
   Social,
   StatItem,
   Testimonial,
 } from "@/types";
+
+export const navItems: NavItem[] = [
+  {
+    name: "home",
+    path: "home",
+    offset: 0,
+  },
+  {
+    name: "find hotel",
+    path: "hotels",
+    offset: 0,
+  },
+  {
+    name: "about us",
+    path: "about",
+    offset: 0,
+  },
+  {
+    name: "contact us",
+    path: "contact",
+    offset: 0,
+  },
+];
 
 export const statsData: StatItem[] = [
   {

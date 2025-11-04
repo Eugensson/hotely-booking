@@ -10,7 +10,7 @@ import { fadeIn } from "@/lib/variants";
 
 export const Find = () => {
   return (
-    <section className="py-12 xl:py-36">
+    <section className="py-12 xl:py-36" id="hotels">
       <div className="container mx-auto">
         <div className="text-center">
           <motion.h2

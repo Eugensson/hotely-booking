@@ -1,4 +1,9 @@
-import Link from "next/link";
+"use client";
+
+import { Link as ScrollLink } from "react-scroll";
+
+import { cn } from "@/lib/utils";
+import { navItems } from "@/lib/data";
 
 interface NavProps {
   containerStyles?: string;
@@ -6,22 +11,23 @@ interface NavProps {
   linkStyles?: string;
 }
 
-const navLinks = [
-  { href: "/", label: "home" },
-  { href: "/", label: "find hotel" },
-  { href: "/", label: "about us" },
-  { href: "/", label: "contact us" },
-];
-
 export const Nav = ({ containerStyles, listStyles, linkStyles }: NavProps) => {
   return (
     <nav className={containerStyles}>
       <ul className={listStyles}>
-        {navLinks.map(({ href, label }) => (
-          <li key={label}>
-            <Link href={href} className={linkStyles}>
-              {label}
-            </Link>
+        {navItems.map(({ name, path, offset }) => (
+          <li key={name}>
+            <ScrollLink
+              spy
+              smooth
+              to={path}
+              duration={500}
+              delay={50}
+              offset={offset}
+              className={cn("cursor-pointer", linkStyles)}
+            >
+              {name}
+            </ScrollLink>
           </li>
         ))}
       </ul>

@@ -1,5 +1,11 @@
 import { IconType } from "react-icons/lib";
 
+export type NavItem = {
+  name: string;
+  path: string;
+  offset: number;
+};
+
 export type StatItem = {
   value: number;
   type: string;

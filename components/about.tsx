@@ -18,7 +18,7 @@ export const About = () => {
   });
 
   return (
-    <section className="py-12 xl:pt-0 xl:pb-24" ref={ref}>
+    <section className="py-12 xl:pt-0 xl:pb-24" ref={ref} id="about">
       <div className="container flex flex-col xl:flex-row">
         <motion.div
           variants={fadeIn("right", 0.2)}
