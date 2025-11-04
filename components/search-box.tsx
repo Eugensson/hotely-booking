@@ -19,7 +19,7 @@ export const SearchBox = () => {
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: false, amount: 0 }}
-      className="w-full max-w-[488px] max-h-max bg-white flex flex-col border-outline rounded-[20px] p-10 gap-y-5"
+      className="w-full max-w-[488px] max-h-max bg-soft-green-secondary/50 flex flex-col border-outline rounded-[20px] p-10 gap-y-5 backdrop-blur"
     >
       <div className="mb-5 flex flex-col gap-2">
         <Label htmlFor="destination" className="mb-2 font-medium text-black">
