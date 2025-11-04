@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-primary: "Open Sans", sans-serif;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1200px;
+
+  --color-white: #ffffff;
+  --color-black: #273029;
+  --color-soft-green: #85c7dc;
+  --color-soft-green-secondary: #f3f9fb;
+  --color-grey: #888888;
+  --color-grey-secondary: #f8f8f8;
+  --color-orange: #f2994a;
+  --color-outline: #f1f1f1;
+  --color-pink: #f3d1d7;
+  --color-body: #e5e5e5;
+
+  --background-image-hero: url("/assets/hero/bg.jpg");
+  --background-image-hero2: url("/assets/hero/bg-2.jpg");
+}
+
+@layer base {
+  body {
+    @apply bg-body text-grey leading-8 font-primary;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-black font-bold;
+  }
+
+  .h2 {
+    @apply text-3xl;
+  }
+
+  .h3 {
+    @apply text-2xl;
+  }
+
+  .h4 {
+    @apply text-xl;
+  }
+}
+
+.container {
+  @apply w-full max-w-300 mx-auto px-4;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  @apply bg-white;
+}
