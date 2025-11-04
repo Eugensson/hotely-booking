@@ -1,4 +1,4 @@
-import { StatItem } from "@/types";
+import { RecommendationItem, StatItem } from "@/types";
 
 export const statsData: StatItem[] = [
   {
@@ -15,5 +15,50 @@ export const statsData: StatItem[] = [
     value: 186,
     type: "Countries",
     unit: null,
+  },
+];
+
+export const recommendationData: RecommendationItem[] = [
+  {
+    id: "1",
+    name: "Shanghai Hotel",
+    image: "/recommendation/hotel-1.jpg",
+    location: "Shanghai, China",
+    description:
+      "Experience modern comfort in the heart of Shanghai. Shanghai Hotel offers elegant rooms, skyline views, and world-class service for both business and leisure travellers.",
+    price: 40,
+    testimonial: {
+      message:
+        "A wonderful stay with exceptional hospitality. The staff went above and beyond to make my visit smooth and enjoyable. Highly recommended for anyone visiting Shanghai.",
+      personName: "Charlotte Davies",
+    },
+  },
+  {
+    id: "2",
+    name: "Peaks Lodge",
+    image: "/recommendation/hotel-2.jpg",
+    location: "Aspen, USA",
+    description:
+      "Nestled in the mountains of Aspen, Peaks Lodge combines rustic charm with luxury amenities. Perfect for ski lovers and nature seekers looking for relaxation and comfort.",
+    price: 90,
+    testimonial: {
+      message:
+        "The view from our room was breathtaking! Cozy interiors, great food, and easy access to the slopes. A truly memorable mountain getaway.",
+      personName: "Oliver Thompson",
+    },
+  },
+  {
+    id: "3",
+    name: "Tropical Oasis Resort",
+    image: "/recommendation/hotel-3.jpg",
+    location: "Bali, Indonesia",
+    description:
+      "Relax and unwind in paradise at Tropical Oasis Resort. Enjoy beachfront villas, tropical gardens, and a peaceful atmosphere designed for pure indulgence.",
+    price: 140,
+    testimonial: {
+      message:
+        "Everything was perfect — from the friendly staff to the tranquil surroundings. It felt like a private sanctuary by the sea. I can’t wait to return!",
+      personName: "Sophie Bennett",
+    },
   },
 ];

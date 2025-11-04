@@ -3,6 +3,7 @@ import { About } from "@/components/about";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Featured } from "@/components/featured";
+import { Recommendation } from "@/components/recommendation";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <Featured />
       <About />
+      <Recommendation />
       <Footer />
     </main>
   );
