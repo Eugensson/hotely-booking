@@ -9,9 +9,15 @@ interface NavProps {
   containerStyles?: string;
   listStyles?: string;
   linkStyles?: string;
+  setMobileNav?: () => void;
 }
 
-export const Nav = ({ containerStyles, listStyles, linkStyles }: NavProps) => {
+export const Nav = ({
+  containerStyles,
+  listStyles,
+  linkStyles,
+  setMobileNav,
+}: NavProps) => {
   return (
     <nav className={containerStyles}>
       <ul className={listStyles}>
@@ -25,6 +31,7 @@ export const Nav = ({ containerStyles, listStyles, linkStyles }: NavProps) => {
               delay={50}
               offset={offset}
               className={cn("cursor-pointer", linkStyles)}
+              onClick={setMobileNav}
             >
               {name}
             </ScrollLink>

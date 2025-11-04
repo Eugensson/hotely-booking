@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Menu } from "lucide-react";
 
 import {
@@ -15,8 +16,10 @@ import { Logo } from "@/components/logo";
 import { Socials } from "@/components/socials";
 
 export const MobileMenu = () => {
+  const [open, setOpen] = useState<boolean>(false);
+
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger>
         <Menu size={36} className="text-white" />
       </SheetTrigger>
@@ -30,7 +33,10 @@ export const MobileMenu = () => {
           </SheetTitle>
           <SheetDescription className="sr-only">Mobile menu</SheetDescription>
         </SheetHeader>
-        <Nav listStyles="flex flex-col gap-y-6 text-2xl capitalize text-black" />
+        <Nav
+          listStyles="flex flex-col gap-y-6 text-2xl capitalize text-black"
+          setMobileNav={() => setOpen(false)}
+        />
         <Socials
           containerStyles="flex items-center gap-x-4"
           linkStyles="text-black hover:text-soft-green transition-colors duration-300"

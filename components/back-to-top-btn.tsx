@@ -27,7 +27,7 @@ export const BackToTopBtn = () => {
         <button
           onClick={scrollToTop}
           type="button"
-          className="fixed right-15 bottom-16 z-10 size-12 flex justify-center items-center rounded-lg bg-soft-green cursor-pointer border-2 border-white"
+          className="fixed right-8 xl:right-15 bottom-16 z-10 size-12 flex justify-center items-center rounded-lg bg-soft-green cursor-pointer border-2 border-white"
         >
           <div className="relative">
             <TbChevronsUp
