@@ -1,3 +1,5 @@
+import { IconType } from "react-icons/lib";
+
 export type StatItem = {
   value: number;
   type: string;
@@ -23,4 +25,18 @@ export type Hotel = {
   name: string;
   description: string;
   location: string;
+};
+
+export type Testimonial = {
+  id: string;
+  image: string;
+  message: string;
+  personName: string;
+  location: string;
+};
+
+export type Social = {
+  label: string;
+  href: string;
+  icon: IconType;
 };

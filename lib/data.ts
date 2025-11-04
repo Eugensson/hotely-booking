@@ -1,4 +1,13 @@
-import { Hotel, RecommendationItem, StatItem } from "@/types";
+import { RiTwitterXLine } from "react-icons/ri";
+import { SlSocialFacebook, SlSocialInstagram } from "react-icons/sl";
+
+import {
+  Hotel,
+  RecommendationItem,
+  Social,
+  StatItem,
+  Testimonial,
+} from "@/types";
 
 export const statsData: StatItem[] = [
   {
@@ -95,5 +104,42 @@ export const hotels: Hotel[] = [
     description:
       "A charming seaside escape in Albania featuring spacious rooms, ocean views, and a calm, welcoming atmosphere.",
     location: "Albania",
+  },
+];
+
+export const testimonialsData: Testimonial[] = [
+  {
+    id: "1",
+    image: "/testimonials/img-1.jpg",
+    message:
+      "My stay in Singapore was absolutely wonderful! The hotel offered excellent service, spotless rooms, and stunning city views that made each morning special. The staff were attentive and kind, always ready to assist. Booking through the platform was quick, secure, and effortless — from browsing to confirmation. The whole experience was smooth and far exceeded expectations. I’ll gladly use this service again for my next trip abroad.",
+    personName: "Robert Turner",
+    location: "Singapore",
+  },
+  {
+    id: "2",
+    image: "/testimonials/img-2.jpg",
+    message:
+      "An excellent experience from start to finish. The Los Angeles hotel was beautiful, with elegant interiors and a welcoming atmosphere. The staff were professional and made sure everything was perfect. Finding the best deal online was quick, saving time and money. Everything went smoothly, and the comfort was exceptional. I’d highly recommend this platform for stress-free travel.",
+    personName: "James Cooper",
+    location: "Los Angeles, USA",
+  },
+];
+
+export const socialsData: Social[] = [
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/",
+    icon: SlSocialInstagram,
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/",
+    icon: SlSocialFacebook,
+  },
+  {
+    label: "TwitterX",
+    href: "https://www.x.com/",
+    icon: RiTwitterXLine,
   },
 ];

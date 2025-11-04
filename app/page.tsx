@@ -4,6 +4,7 @@ import { About } from "@/components/about";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Featured } from "@/components/featured";
+import { Testimonials } from "@/components/testimonials";
 import { Recommendation } from "@/components/recommendation";
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <About />
       <Recommendation />
       <Find />
+      <Testimonials />
       <Footer />
     </main>
   );
