@@ -20,8 +20,8 @@
   --color-pink: #f3d1d7;
   --color-body: #e5e5e5;
 
-  --background-image-hero: url("/assets/hero/bg.jpg");
-  --background-image-hero2: url("/assets/hero/bg-2.jpg");
+  --background-image-hero: url("/hero/bg.jpg");
+  --background-image-hero2: url("/hero/bg-2.jpg");
 }
 
 @layer base {
