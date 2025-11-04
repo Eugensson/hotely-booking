@@ -18,7 +18,7 @@ export const HotelCard = ({ hotel }: HotelCardProps) => {
   const { image, name, location } = hotel;
 
   return (
-    <Card className="w-full max-w-67.5 overflow-hidden rounded-xl border-2 border-outline  hover:cursor-pointer group hover:bg-soft-green transition-colors duration-700">
+    <Card className="w-full max-w-67.5 mx-auto overflow-hidden rounded-xl border-2 border-outline  hover:cursor-pointer group hover:bg-soft-green transition-colors duration-700">
       <CardContent className="p-0 overflow-hidden">
         <Image
           src={image}

@@ -12,8 +12,8 @@ export const Logo = ({ className, footer = false }: LogoProps) => {
       <Image
         src={footer ? "/footer/logo.svg" : "/header/logo.svg"}
         alt="Hotely logo"
-        width={80}
-        height={36}
+        width={90}
+        height={46}
         className="mb-2"
       />
     </Link>
