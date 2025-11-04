@@ -1,4 +1,4 @@
-import { RecommendationItem, StatItem } from "@/types";
+import { Hotel, RecommendationItem, StatItem } from "@/types";
 
 export const statsData: StatItem[] = [
   {
@@ -60,5 +60,40 @@ export const recommendationData: RecommendationItem[] = [
         "Everything was perfect — from the friendly staff to the tranquil surroundings. It felt like a private sanctuary by the sea. I can’t wait to return!",
       personName: "Sophie Bennett",
     },
+  },
+];
+
+export const hotels: Hotel[] = [
+  {
+    id: "1",
+    image: "/find/hotel-1.jpg",
+    name: "Hotel de Luna",
+    description:
+      "A stylish urban retreat in the heart of Singapore, offering elegant rooms and panoramic city views for modern travellers.",
+    location: "Singapore",
+  },
+  {
+    id: "2",
+    image: "/find/hotel-2.jpg",
+    name: "Ina Tretes Hotel",
+    description:
+      "Surrounded by lush nature in Indonesia, this hotel blends comfort with local charm for a relaxing getaway.",
+    location: "Indonesia",
+  },
+  {
+    id: "3",
+    image: "/find/hotel-3.jpg",
+    name: "Delight Hotel",
+    description:
+      "A cozy stay in Indonesia with modern amenities, friendly service, and easy access to local attractions.",
+    location: "Indonesia",
+  },
+  {
+    id: "4",
+    image: "/find/hotel-4.jpg",
+    name: "Mercusuar Hotel",
+    description:
+      "A charming seaside escape in Albania featuring spacious rooms, ocean views, and a calm, welcoming atmosphere.",
+    location: "Albania",
   },
 ];

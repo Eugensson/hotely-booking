@@ -1,4 +1,5 @@
 import { Hero } from "@/components/hero";
+import { Find } from "@/components/find";
 import { About } from "@/components/about";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -13,6 +14,7 @@ const Home = () => {
       <Featured />
       <About />
       <Recommendation />
+      <Find />
       <Footer />
     </main>
   );

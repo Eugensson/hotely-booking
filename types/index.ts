@@ -16,3 +16,11 @@ export type RecommendationItem = {
     personName: string;
   };
 };
+
+export type Hotel = {
+  id: string;
+  image: string;
+  name: string;
+  description: string;
+  location: string;
+};
